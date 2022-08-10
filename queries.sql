@@ -63,5 +63,17 @@ COMMIT TRANSACTION;
 
 -- DAY 2 QUARIES
 
+SELECT COUNT(*) FROM animales;
+
+SELECT COUNT(*) FROM animales WHERE escape_attempts = 0;
+
+SELECT AVG(weight_kg) FROM animales;
+
+SELECT neutered, SUM(escape_attempts) FROM animales GROUP BY neutered;
+
+SELECT neutered, MAX(weight_kg) as Max_weight, MIN(weight_kg) as Min_weight  FROM animales GROUP BY neutered;
+
+SELECT neutered, AVG(escape_attempts) as Average_escape_attempts FROM animales WHERE data_of_birth <= '2000-12-31' AND data_of_birth >= '1990-01-01' GROUP BY neutered;
+
 
 

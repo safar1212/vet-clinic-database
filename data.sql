@@ -26,7 +26,7 @@ VALUES ('Squirtle', '2005-04-02', 3, False, -12.13);
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES ('Angemon', '2005-06-12', 1, True, -45);
 
-INSERT INTO animales (name, date_of_birth, escape_attempts, neutered, weight_kg)
+INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES ('Boarmon', '2005-06-07', 7, True, 20.4);
 
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
@@ -67,5 +67,29 @@ WHERE name LIKE '%mon';
 
 UPDATE animals SET species_id = (SELECT id FROM species WHERE name = 'Pokemon')
 WHERE species_id IS Null;
+
+UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Sam Smith')
+WHERE name = 'Agumon';
+
+UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell')
+WHERE name = 'Gabumon' OR name = 'Pikachu';
+
+UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob')
+WHERE name = 'Devimon' OR name = 'Planton';
+
+UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond')
+WHERE name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom';
+
+UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
+WHERE name = 'Angemon' OR name = 'Boarmon';
+
+
+What animals belong to Melody Pond?
+List of all animals that are pokemon (their type is Pokemon).
+List all owners and their animals, remember to include those that don't own any animal.
+How many animals are there per species?
+List all Digimon owned by Jennifer Orwell.
+List all animals owned by Dean Winchester that haven't tried to escape.
+Who owns the most animals?
 
 

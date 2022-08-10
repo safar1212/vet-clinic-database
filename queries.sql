@@ -77,3 +77,5 @@ SELECT neutered, AVG(escape_attempts) as Average_escape_attempts FROM animales W
 
 
 
+-- Day 3
+

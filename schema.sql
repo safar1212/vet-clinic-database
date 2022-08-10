@@ -8,6 +8,10 @@
   weight_kg    DECIMAL(4,2)
 );
 
+ALTER TABLE animales ADD species varchar(500);
+
+
+
 
 
 

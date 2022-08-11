@@ -49,19 +49,6 @@ CREATE TABLE vets(
   PRIMARY KEY(id)
 );
 
-CREATE TABLE specializations(
-
-);
-
-CREATE TABLE visits(
-
-);
-
-DROP TABLE IF EXISTS specializations;
-
-DROP TABLE IF EXISTS visits;
-
-
 
 CREATE TABLE specializations(
   vet_id      integer references vets(id),

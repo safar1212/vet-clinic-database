@@ -82,3 +82,20 @@ WHERE name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom';
 
 UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
 WHERE name = 'Angemon' OR name = 'Boarmon';
+
+
+
+-- Day 4
+
+
+INSERT INTO vets(name, age, date_of_graduation)
+VALUES ('Vet William Tatcher', 45, '2000-04-23');
+
+INSERT INTO vets(name, age, date_of_graduation)
+VALUES ('Vet Maisy Smith', 26, '2019-01-17');
+
+INSERT INTO vets(name, age, date_of_graduation)
+VALUES ('Vet Stephanie Mendez', 64, '1981-05-04');
+
+INSERT INTO vets(name, age, date_of_graduation)
+VALUES ('Vet Jack Harkness', 38, '2008-06-08');

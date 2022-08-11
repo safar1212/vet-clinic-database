@@ -108,4 +108,6 @@ WHERE count = (SELECT MAX(count) FROM (SELECT full_name, count(a.owner_id) FROM 
 JOIN animals A ON O.id = A.owner_id GROUP BY O.full_name) AS agg); 
 
 
+-- day 4
+
 

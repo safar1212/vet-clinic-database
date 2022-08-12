@@ -39,6 +39,35 @@ CREATE TABLE animals(
 );
 
 
+-- Day 4
+
+CREATE TABLE vets(
+  id            integer GENERATED ALWAYS AS IDENTITY,
+  name       varchar(500),
+  age          integer,
+  date_of_graduation    date,
+  PRIMARY KEY(id)
+);
+
+
+CREATE TABLE specializations(
+  vet_id      integer references vets(id),
+  species_id      integer references species(id)
+);
+
+ALTER TABLE animals ADD PRIMARY KEY (id);
+
+CREATE TABLE visits(
+  vet_id      integer references vets(id),
+  animals_id      integer references animals(id)
+);
+
+
+
+
+
+
+
 
 
 

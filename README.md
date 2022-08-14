@@ -13,7 +13,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
 | 👤 Name | Github | Twitter | LinkedIn |
 |------|--------|---------|----------|
@@ -34,7 +34,6 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Inspiration
-- etc
 
 ## 📝 License
 

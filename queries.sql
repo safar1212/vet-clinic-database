@@ -222,3 +222,21 @@ ORDER BY
     count DESC
 lIMIT 1;
 
+
+
+-- second week  first day
+
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animals_id = 4;
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+
+
+CREATE INDEX animals_id_asc ON visits (animals_id ASC);
+
+CREATE INDEX vet_id_asc ON visits (vet_id ASC);
+
+CREATE INDEX email_asc ON owners (email ASC);
+
+

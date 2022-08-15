@@ -63,6 +63,11 @@ CREATE TABLE visits(
 );
 
 
+-- second week first day
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+
 
 
 

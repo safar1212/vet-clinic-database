@@ -2,6 +2,11 @@
 
 This is a relational database about vet clinic, where you can check different animales and information about them.
 
+## Schema
+
+![drawSQL-export-2022-08-16_19_20](https://user-images.githubusercontent.com/78845635/184903587-3c474d47-6f44-4c53-bcd0-3bb12774cb07.png)
+
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
